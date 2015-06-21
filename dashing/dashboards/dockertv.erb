@@ -1,12 +1,12 @@
 <script type='text/javascript'>
 $(function() {
-Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":1,"size_y":1},{"col":4,"row":2,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1}]')
+
 Dashing.widget_base_dimensions = [370, 340]
   Dashing.numColumns = 5
 });
 </script>
 
-<% content_for(:title) { "My super sweet dashboard" } %>
+<% content_for(:title) { "Heat Clinic Stats " } %>
 <div class="gridster">
   <ul>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -14,11 +14,11 @@ Dashing.widget_base_dimensions = [370, 340]
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="dockerDeploy" data-view="Number" data-title="Containers Deployed" style="background-color:#96bf48;"></div>
+      <div data-id="containersRun" data-view="Number" data-title="Docker Containers Run" style="background-color:#96bf48;"></div>
     </li>
  
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="wildflycpu" data-view="Number" data-title="App Server CPU Usage" data-prefix=""></div>
+      <div data-id="wildflycpu" data-view="Number" data-title="App CPU Usage" data-prefix=""></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -34,15 +34,19 @@ Dashing.widget_base_dimensions = [370, 340]
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="wildflymem" data-view="Meter" data-title="App Server Memory Usage" data-min="0" data-max="100"></div>
+      <div data-id="wildflymem" data-view="Meter" data-title="App Memory Usage" data-min="0" data-max="100"></div>
     </li>
 
-<!--    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="wildflyMEM" data-view="Number" data-title="App Server Memory Usage" data-prefix=""></div>
-    </li>
--->         
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="mysqlmem" data-view="Meter" data-title="DB Memory Usage" data-min="0" data-max="100"></div>
+    </li>
+
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="seleniumPass" data-view="Number" data-title=" Selenium Test Passes" ></div>
+    </li>
+    
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
+      <div data-id="seleniumError" data-view="Number" data-title="Selenium Test Errors" style="background-color:#f5a22e;"></div>
     </li>
 
 
