@@ -15,11 +15,14 @@ Management & Operations
 - Cloud independence (EC2 or OpenStack as the underlying hosts that have the docker engine)
 - Stats
 
-
 ## Containers used:
 
 ### docker-bench-security
 https://registry.hub.docker.com/u/diogomonica/docker-bench-security/
+
+Forked, re-built the container and published to docker registry
+https://github.com/nikhilv/docker-bench-security
+https://bintray.com/nikhilv/registry
 
 ### mysql
 https://registry.hub.docker.com/_/mysql/
@@ -37,8 +40,26 @@ https://benchmarks.cisecurity.org/tools2/docker/CIS_Docker_1.6_Benchmark_v1.0.0.
 Dashing dashboards
 http://shopify.github.io/dashing/
 
+## Reference application "Heat Clinic"
+
+Heat Clinic
+https://github.com/BroadleafCommerce/DemoSite
+http://www.broadleafcommerce.com/docs/core/current/getting-started
+
+## Tools / Services we integrated with:
+- Docker!!
+- Docker Hub and Bintray for docker registries
+- Docker Bench
+- EC2 and OpenStack
+- Wildfly (Application Server)
+- MySQL (Database)
+- Selenium (Developer / Quality Assurance testing tool)
+- Dashing (Dashboard)
+- Reference implementation using ElectricFlow and ElectricAccelerator.
+	- Flow is the continuous delivery application
+	- We used Accelerator to run our selenium tests in parallel spread out in a cluster
 ## About
-This repository contains our work for the Docker 2015 Hackathon.
+This repository contains our work for the Docker 2015 Hackathon
 
 ## Team Members 
 
@@ -48,4 +69,3 @@ Tanay Nagjee
 
 Nikhil Vaze
 
-Reference implementation using ElectricFlow and ElectricAccelerator.
