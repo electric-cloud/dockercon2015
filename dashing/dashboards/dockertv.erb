@@ -1,7 +1,6 @@
 <script type='text/javascript'>
 $(function() {
-
-Dashing.widget_base_dimensions = [370, 340]
+Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":1,"size_y":1},{"col":4,"row":2,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":5,"row":1,"size_x":1,"size_y":2}]')
   Dashing.numColumns = 5
 });
 </script>
@@ -10,11 +9,11 @@ Dashing.widget_base_dimensions = [370, 340]
 <div class="gridster">
   <ul>
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-view="Image" data-image="/logo.png" style="background-color:#ffffff;"></div>
+      <div data-view="Image" data-image="/logo.png" style="background-color:#FFCCCC;"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="containersRun" data-view="Number" data-title="Docker Containers Run" style="background-color:#96bf48;"></div>
+      <div data-id="containersRun" data-view="Number" data-title="Docker Containers Run" style="background-color:#6699FF;"></div>
     </li>
  
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -24,15 +23,15 @@ Dashing.widget_base_dimensions = [370, 340]
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="mysqlcpu" data-view="Number" data-title="DB CPU Usage" data-prefix=""></div>
     </li>
-
+<!--
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="securityPass" data-view="Number" data-title="Docker Bench Passes" data-prefix=""></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="securityWarn" data-view="Number" data-title="Docker Bench Warnings" style="background-color:#f5a22e;"></div>
+      <div data-id="securityWarn" data-view="Number" data-title="Docker Bench Issues" style="background-color:#f5a22e;"></div>
     </li>
-
+-->
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
       <div data-id="wildflymem" data-view="Meter" data-title="App Memory Usage" data-min="0" data-max="100"></div>
     </li>
@@ -42,13 +41,15 @@ Dashing.widget_base_dimensions = [370, 340]
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="seleniumPass" data-view="Number" data-title=" Selenium Test Passes" ></div>
+      <div data-id="seleniumPass" data-view="Number" data-title=" Selenium Test Passes" style="background-color:#009933;" ></div>
     </li>
     
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="seleniumError" data-view="Number" data-title="Selenium Test Errors" style="background-color:#f5a22e;"></div>
+      <div data-id="seleniumError" data-view="Number" data-title="Selenium Test Issues" style="background-color:#CC0000;"></div>
     </li>
-
+    <li data-row="1" data-col="1" data-sizex="1" data-sizey="2">
+      <div data-id="benchLong" data-view="List" data-unordered="true" data-title="Docker Bench Tests" style="background-color:#6699FF;"></div>
+    </li>
 
   </ul>
 </div>
