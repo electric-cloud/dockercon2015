@@ -58,6 +58,10 @@ http://www.broadleafcommerce.com/docs/core/current/getting-started
 - Reference implementation using ElectricFlow and ElectricAccelerator.
 	- Flow is the continuous delivery application
 	- We used Accelerator to run our selenium tests in parallel spread out in a cluster
+
+## Demo video
+https://www.youtube.com/watch?v=S4x2gvUrk3Q&feature=youtu.be
+
 ## About
 This repository contains our work for the Docker 2015 Hackathon
 
