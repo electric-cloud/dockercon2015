@@ -1,3 +1,9 @@
+<script type='text/javascript'>
+$(function() {
+Dashing.gridsterLayout('[{"col":1,"row":1,"size_x":1,"size_y":1},{"col":2,"row":1,"size_x":1,"size_y":1},{"col":2,"row":2,"size_x":1,"size_y":1},{"col":4,"row":2,"size_x":1,"size_y":1},{"col":3,"row":1,"size_x":1,"size_y":1},{"col":4,"row":1,"size_x":1,"size_y":1},{"col":1,"row":2,"size_x":1,"size_y":1},{"col":3,"row":2,"size_x":1,"size_y":1}]')
+});
+</script>
+
 <% content_for(:title) { "My super sweet dashboard" } %>
 <div class="gridster">
   <ul>
@@ -6,11 +12,11 @@
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="dockerDeploy" data-view="Number" data-title="Number of containers deployed" style="background-color:#96bf48;"></div>
+      <div data-id="dockerDeploy" data-view="Number" data-title="Containers deployed" style="background-color:#96bf48;"></div>
     </li>
  
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="wildflycpu" data-view="Number" data-title="AppServer CPU Usage" data-prefix=""></div>
+      <div data-id="wildflycpu" data-view="Number" data-title="App Server CPU Usage" data-prefix=""></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -18,11 +24,11 @@
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="securityPass" data-view="Number" data-title="Security Tests Passed" data-prefix=""></div>
+      <div data-id="securityPass" data-view="Number" data-title="Security Test Passes" data-prefix=""></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="securityWarn" data-view="Number" data-title="Security Warnings" style="background-color:#f5a22e;"></div>
+      <div data-id="securityWarn" data-view="Number" data-title="Security Test Warnings" style="background-color:#f5a22e;"></div>
     </li>
 
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
@@ -30,7 +36,7 @@
     </li>
 
 <!--    <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
-      <div data-id="wildflyMEM" data-view="Number" data-title="AppServer Memory Usage" data-prefix=""></div>
+      <div data-id="wildflyMEM" data-view="Number" data-title="App Server Memory Usage" data-prefix=""></div>
     </li>
 -->         
     <li data-row="1" data-col="1" data-sizex="1" data-sizey="1">
